@@ -1,0 +1,6 @@
+*
+!doc/
+!java/
+!python/
+!pascal/
+!.gitignore
