@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url(./img3);
+    background-position: center;
+    background-size: cover;
+
+}
+
+form {
+    width: 400px;
+    height: 515px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px;
+    height: 50px;
+    text-align: center;
+    color: gray;
+
+}
+
+.input-box {
+    width: 100%;
+    margin: 40px;
+    height: 50px;
+    margin-left: 45px;
+
+}
+
+.input-box input {
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    backdrop-filter: blur (3px);
+    box-shadow: 0 0 10px;
+    font-size: large;
+    background: transparent;
+    padding: 15px;
+    transition: 0.1s;
+}
+
+input:active {
+    transform: scale(1.05);
+}
+
+.input-box label {
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+
+}
+
+.eye-icon {
+    position: relative;
+    top: 9px;
+    left: -40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.eye-icon:active {
+    transform: scale(1.05);
+}
+
+.remember-forgot {
+    position: relative;
+    left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.remember-forgot input {
+    height: 20x;
+    position: relative;
+    top: 2px;
+    right: 5px;
+    accent-color: #e3e3ee;
+    cursor: pointer;
+
+}
+
+.remember-forgot input:active {
+    transform: scale(1.2);
+}
+
+.remember-forgot label {
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.remember-forgot:hover {
+    text-decoration: underline;
+    color: #e3e3ee;
+
+}
+
+.remember-forgot a {
+    position: relative;
+    left: 150px;
+    color: #e3e3ee;
+    text-decoration: none;
+}
+
+button {
+    position: relative;
+    left: 100px;
+    top: 40px;
+    font-size: x-large;
+    height: 50px;
+    width: 200px;
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: 0 0 10px;
+    backdrop-filter: blur(3px);
+    transition: 0.1s;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: gray;
+}
+
+.register-link {
+    position: relative;
+    top: 80px;
+    text-align: center;
+}
