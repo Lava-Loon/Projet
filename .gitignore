@@ -1,0 +1,21 @@
+# Node
+node_modules/
+.npm/
+npm-debug.log*
+
+# Next.js
+.next/
+
+# Build
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+
+# Archives
+*.tar.gz
+
+# TypeScript
+*.tsbuildinfo

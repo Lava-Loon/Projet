@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./img2);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+
+form{
+    width: 400px;
+    height: 515px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+
+}
+
+h1{
+
+    font-size: 50px;
+    margin: 10px;
+    text-align: center;
+    height: 50px;
+    color: gray;
+
+}
+
+.input-box{
+    width: 100%;
+    margin: 30px;
+    height: 50px;
+    margin-left: 45px;
+    
+}
+
+.input-box input{
+    height: 50px;
+    width: 250px;
+    border-radius: 2px;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0 0 10px;
+    padding: 15px;
+    font-size: large;
+    transition: 0.1s;
+
+}
+
+.input-box .floating-label {
+    position: absolute;
+    left: 90px;
+    top: 95px;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+
+}
+
+.input-box input:focus + .floating-label,
+.input-box input:not(:placeholder-shown) + .floating-label {
+    transform: translateY(-50px);
+    font-size: 14px;
+    color: #000;
+    padding: 0 4px;
+}
+input::placeholder {
+    color: #000;
+
+}
+
+input::placeholder:focus {
+    transform: translateY(-20px);
+}
+
+.input-box label {
+    cursor: pointer;
+  
+}
+
+button {
+    cursor: pointer;
+    align-items: center;
+    margin-left: 98px;
+    height: 50px;
+    width: 200px;
+    font-family: poppins;
+    font-size: x-large;
+    border-radius: 50px;
+    backdrop-filter: blur(3px);
+    background: transparent;
+    box-shadow: 0 0 10px;
+    transition: 0.1s;
+
+}
+
+button:hover {
+    position: relative;
+    background: #e3e3ee;
+    transform: scale(1.1);
+
+}
+
+.login {
+    align-items: center;
+    margin: 20px 0 15px;
+}
+
+.login p {
+    margin-left: 84px;
+    
+}
+
+.login p:hover {    
+    text-decoration: underline;
+}
+
+label{
+    position: relative;
+    top: 5px;
+
+}
+
+.eye-icon {
+    
+    position: relative;
+    top: 7px;
+    right: 37px;
+    cursor: pointer ;
+    transition: 0.05s;
+    
+}
+
+svg:hover {
+    fill: black;
+
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0.3;
+    }
+}

@@ -1,0 +1,9 @@
+- React.FC<Props>: Type TypeScript pour définir un composant fonctionnel avec ses propriétés.
+- interface Props { ... }: Définit la structure des données (Props) que le composant reçoit.
+- { children }: Prop spéciale qui contient les éléments imbriqués à l'intérieur d'un composant (utile pour les Layouts).
+- clsx('base', active && 'active'): Utilitaire pour combiner des classes CSS conditionnellement.
+- "use client": Directive à mettre en haut du fichier pour utiliser des hooks React (Interactif).
+- <Icon className="..." />: Pattern pour passer et afficher des icônes comme des composants.
+- components.map((comp) => ...): Pattern pour transformer une liste de données en liste de composants.
+- key={item.id}: Attribut obligatoire lors d'un .map() pour aider React à identifier les changements.
+- onClick={() => fn(id)}: Pattern pour passer un paramètre à une fonction lors d'un clic.

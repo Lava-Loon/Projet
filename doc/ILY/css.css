@@ -1,0 +1,177 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    overflow: hidden;
+    /* Prevent scrollbars from moving buttons */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+form {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+h1 {
+    position: relative;
+    top: 100px;
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    height: 50px;
+    color: #fff;
+    justify-content: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    position: relative;
+    top: 300px;
+    left: 170px;
+}
+
+.btn button,
+.no {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100px;
+    /* Made slightly wider */
+    height: 50px;
+    /* Made slightly taller */
+    border-radius: 25px;
+    /* Rounded pill shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.no {
+    position: absolute;
+    /* OVERRIDE generic transition to prevent lag on left/top changes */
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.returning {
+    transition: left 0.5s ease, top 0.5s ease;
+}
+
+.yes {
+    position: relative;
+}
+
+/* Floating Hearts */
+.heart {
+    position: absolute;
+    bottom: -20px;
+    color: rgba(255, 255, 255, 0.5);
+    animation: float 6s linear infinite;
+    z-index: 1;
+    font-size: 20px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        height: auto;
+        min-height: 500px;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        /* Allow side-by-side */
+        flex-wrap: wrap;
+        /* Wrap content */
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* Center vertically in the form */
+    }
+
+    h1 {
+        position: static;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        height: auto;
+        width: 100%;
+        /* Force H1 to take full line */
+    }
+
+    .btn {
+        position: static;
+        display: flex;
+        justify-content: center;
+        width: auto;
+        /* Allow it to shrink to button size */
+        margin: 10px;
+    }
+
+    .btn button,
+    .no {
+        width: 120px;
+        height: 60px;
+        font-size: 1.1rem;
+    }
+
+    .no {
+        /* Ensure it starts in a predictable place if not moved yet */
+        position: static;
+        margin: 10px;
+        margin-top: 10px;
+        /* Override previous margin */
+    }
+}

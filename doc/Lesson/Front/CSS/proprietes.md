@@ -1,0 +1,41 @@
+- margin: L'espace extérieur autour d'un élément, créant un espace entre cet élément et ceux qui l'entourent (`m-4`, `mx-auto`).
+- padding: L'espace intérieur entre le contenu de l'élément et ses bords (`p-6`, `py-4`).
+- box-sizing: Détermine comment les dimensions (width et height) sont calculées (`box-border`).
+- font-family: Définit la police utilisée pour le texte de l'élément (`font-sans`, `font-mono`).
+- display: Contrôle le type de boîte de l'élément (`block`, `flex`, `grid`, `hidden`).
+- justify-content: Définit comment les éléments sont distribués horizontalement (`justify-center`, `justify-between`).
+- align-items: Définit l'alignement vertical des éléments dans une boîte Flex ou Grid (`items-center`, `items-start`).
+- min-height: Définit la hauteur minimale de l'élément (`min-h-screen`).
+- background: Définit l'arrière-plan de l'élément (`bg-white`, `bg-blue-500`).
+- background-size: Spécifie la taille de l'image d'arrière-plan.
+- background-position: Définit la position de l'image d'arrière-plan dans l'élément.
+- width: Définit la largeur de l'élément (`w-full`, `w-80`).
+- height: Définit la hauteur de l'élément.
+- max-width: Définit la largeur maximale autorisée (`max-w-md`).
+- border: Définit les propriétés de la bordure de l'élément (`border`, `border-gray-200`).
+- backdrop-filter: Permet d'appliquer des effets graphiques à la zone derrière un élément (`backdrop-blur`).
+- box-shadow: Applique une ombre autour de l'élément (`shadow-sm`, `shadow-xl`).
+- color: Définit la couleur du texte (`text-gray-800`, `text-white`).
+- border-radius: Définit les coins arrondis des bordures d'un élément (`rounded-lg`, `rounded-2xl`).
+- font-size: Définit la taille de la police (`text-2xl`, `text-sm`).
+- text-align: Définit l'alignement horizontal du texte (`text-center`).
+- position: Définit la manière dont l'élément est positionné (`relative`, `absolute`, `fixed`).
+- outline: Ajoute une bordure extérieure, souvent au focus (`focus:outline-none`).
+- accent-color: Définit la couleur d'accent pour les éléments UI natifs.
+- text-decoration: Ajoute des effets comme le soulignement ou le barrage (`line-through`).
+- cursor: Définit l'apparence du curseur au survol (`cursor-pointer`).
+- font-weight: Définit l'épaisseur de la police (`font-bold`, `font-medium`).
+- top / left / right / bottom : Positionnement par rapport aux bords du conteneur.
+- pointer-events: Contrôle si un élément répond aux clics (`pointer-events-none`).
+- overflow: Gère le dépassement du contenu (`overflow-hidden`, `overflow-y-auto`).
+- animation: Permet d'animer des propriétés via des étapes (`animate-spin`).
+- transition: Permet de changer une propriété progressivement pour une animation fluide (`transition`).
+- background-clip: Définit la zone où l'arrière-plan est visible (utile pour les effets de texte).
+- white-space: Contrôle la gestion des espaces et retours à la ligne.
+- filter: Applique des effets graphiques (flou, saturation, contraste) (`blur`, `brightness`).
+- letter-spacing: Définit l'espacement entre les caractères.
+- grid-column: Détermine les colonnes occupées dans une grille (`col-span-2`).
+- grid-row: Détermine les lignes occupées dans une grille (`row-span-2`).
+- grid-template-columns: Définit le nombre et la taille des colonnes (`grid-cols-3`).
+- gap: Espace entre les éléments d'une grille ou flexbox (`gap-4`).
+- z-index: Ordre de superposition des éléments (`z-10`, `z-50`).

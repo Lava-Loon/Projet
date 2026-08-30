@@ -1,0 +1,28 @@
+- className="flex justify-center": Utilisation de classes utilitaires directement dans le HTML.
+- flex: Active le mode Flexbox pour l'alignement.
+- grid: Active le mode Grille.
+- justify-center: Centre les éléments horizontalement.
+- items-center: Centre les éléments verticalement.
+- min-h-screen: Définit une hauteur minimale de 100vh (toute la hauteur de l'écran).
+- bg-blue-500: Définit une couleur de fond bleue.
+- p-x / m-x: Ajoute du padding ou de la marge (ex: `p-4`, `m-2`).
+- text-2xl: Définit une taille de texte grande (1.5rem).
+- font-bold: Met le texte en gras.
+- hidden: Cache complètement l'élément (`display: none`).
+- sm: / md: / lg: / xl:: Breakpoints pour le responsive design (mobile, tablette, écran large).
+- hover:: Style appliqué au survol de la souris (ex: `hover:bg-blue-600`).
+- focus:: Style appliqué au clic ou à la sélection (ex: `focus:ring-2`).
+- active:: Style appliqué pendant le moment du clic.
+- peer: Permet de styliser un élément en fonction de l'état de son voisin.
+- group: Permet de styliser des enfants en fonction de l'état du parent.
+- rounded-lg: Applique des coins arrondis.
+- shadow-sm / shadow-lg: Ajoute une ombre portée.
+- space-y-6: Ajoute de l'espace vertical entre les enfants.
+- ring-1 / focus:ring-2: Crée un anneau de contour (utile pour le focus).
+- transition: Ajoute une animation fluide lors des changements.
+- duration-300: Définit la durée de la transition (en millisecondes).
+- clsx(...): Utilitaire pour combiner des classes conditionnellement selon une variable.
+- line-through: Barre le texte (utile pour les tâches terminées).
+- cursor-pointer: Change le curseur en main pour indiquer que c'est cliquable.
+- w-full: Prend toute la largeur disponible (100%).
+- max-w-md: Limite la largeur maximale (utile pour centrer des formulaires).
